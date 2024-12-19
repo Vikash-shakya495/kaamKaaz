@@ -31,11 +31,12 @@
     
                     <!-- Jobs with Dropdown -->
                     <div class="group relative" style="margin-right: 40px;">
-                        <li class="text-gray-700 list-none hover:text-gray-900 font-medium">Jobs <i
+                        <li class="text-gray-700 list-none hover:text-gray-900 font-medium" id="job-grids-toggle">Jobs <i
                                 class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i></li>
+                                
     
                         <!-- Main Dropdown -->
-                        <div
+                        <div id="job-grids-menu"
                             class="absolute left-0 mt-0.5 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-10">
                             <ul class="py-2">
     
@@ -101,7 +102,7 @@
                             </li>
                             <li class="/src/specialPages/404.html">
                                 <button id="pages-employee-toggle"
-                                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                                     Employee <i class="fa-solid fa-angle-down"
                                     style="color: #000000; font-size: 12px;"></i>
                                 </button>
@@ -123,7 +124,7 @@
                             </li>
                             <li class="relative">
                                 <button id="pages-candidates-toggle"
-                                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                                     Candidates <i class="fa-solid fa-angle-down"
                                     style="color: #000000; font-size: 12px;"></i>
                                 </button>
@@ -149,7 +150,7 @@
                             </li>
                             <li class="relative">
                                 <button id="pages-helpcenter-toggle"
-                                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                                     Helpcenter <i class="fa-solid fa-angle-down"
                                     style="color: #000000; font-size: 12px;"></i>
                                 </button>
@@ -177,7 +178,7 @@
                             </li>
                             <li class="relative">
                                 <button id="pages-blogs-toggle"
-                                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                                     Blogs <i class="fa-solid fa-angle-down"
                                     style="color: #000000; font-size: 12px;"></i>
                                 </button>
@@ -201,7 +202,7 @@
                             </li>
                             <li class="relative">
                                 <button id="pages-auth-toggle"
-                                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                                     Auth Pages <i class="fa-solid fa-angle-down"
                                     style="color: #000000; font-size: 12px;"></i>
                                 </button>
@@ -227,7 +228,7 @@
                             </li>
                             <li class="relative">
                                 <button id="pages-utility-toggle"
-                                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                                     Utility <i class="fa-solid fa-angle-down"
                                     style="color: #000000; font-size: 12px;"></i>
                                 </button>
@@ -251,7 +252,7 @@
                             </li>
                             <li class="relative">
                                 <button id="pages-special-toggle"
-                                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                                     Special <i class="fa-solid fa-angle-down"
                                     style="color: #000000; font-size: 12px;"></i>
                                 </button>
@@ -318,7 +319,7 @@
         <!-- Search Bar centered -->
         <div class="relative w-[35%] ">
             <input type="text" placeholder="Search..."
-                class="py-2 pl-4 pl-10 text-gray-600 bg-white border rounded-full focus:outline-none focus:ring focus:ring-gray-200 w-full" />
+                class="py-2 pl-4 text-gray-600 bg-white border rounded-full focus:outline-none focus:ring focus:ring-gray-200 w-full" />
             <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
@@ -363,7 +364,7 @@
     </div>
     <div>
         <div id="jobsDropdown"
-            class="submenu hidden bg-white border w-full border-gray-200 shadow-lg rounded-md mt-2 w-full z-20">
+            class="submenu hidden bg-white border border-gray-200 shadow-lg rounded-md mt-2 w-full z-20">
             <ul class="" style="margin:40px; margin-top: 6.5rem;">
                 <li><a href="/src/jobs/jobCategories.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job Categories </a></li>
                 <li class="relative">
@@ -399,27 +400,27 @@
                 <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pricing</a> </a></li>
                 <li class="relative">
                     <button id="pagess-employee-toggle"
-                        class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                         Employee <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
                     </button>
                 </li>
                 <li class="relative">
                     <button id="pagess-candidates-toggle"
-                        class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                         Candidates <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
                     </button>
     
                 </li>
                 <li class="relative">
                     <button id="pagess-helpcenter-toggle"
-                        class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                         Helpcenter <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
                     </button>
     
                 </li>
                 <li class="relative">
                     <button id="pagess-blogs-toggle"
-                        class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                         Blogs <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
                     </button>
     
@@ -427,7 +428,7 @@
                 </li>
                 <li class="relative">
                     <button id="pagess-auth-toggle"
-                        class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                         Auth Pages <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
                     </button>
     
@@ -435,7 +436,7 @@
                 </li>
                 <li class="relative">
                     <button id="pagess-utility-toggle"
-                        class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                         Utility <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
                     </button>
     
@@ -443,7 +444,7 @@
                 </li>
                 <li class="relative">
                     <button id="pagess-special-toggle"
-                        class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
                         Special <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
                     </button>
                 </li>
@@ -1484,6 +1485,8 @@
         const menuButtons = document.querySelectorAll('.menu-item');
         const subMenus = document.querySelectorAll('.submenu');
         const submenuLinks = document.querySelectorAll('.submenu a');
+        const toggleButton = document.getElementById('job-grids-toggle');
+    const subMenu = document.getElementById('job-grids-menu');
 
         // Function to close all submenus
         function closeAllSubmenus() {
@@ -1517,14 +1520,36 @@
                 toggleSubmenu(targetId);
             });
         });
+        function closeOtherSubmenus(currentMenu) {
+        const allSubMenus = document.querySelectorAll('.sub-menu'); // assuming all submenus have this class
+        allSubMenus.forEach(menu => {
+            if (menu !== currentMenu) {
+                menu.classList.add('opacity-0', 'invisible');
+                menu.classList.remove('opacity-100', 'visible');
+            }
+        });
+    }
+
+    // Toggle visibility of the Job Grids menu
+    toggleButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Toggle visibility of the menu
+        subMenu.classList.toggle('opacity-0');
+        subMenu.classList.toggle('invisible');
+        subMenu.classList.toggle('opacity-100');
+        subMenu.classList.toggle('visible');
+
+        // Close other submenus if open
+        closeOtherSubmenus(subMenu);
+    });
 
         // Close the sub-menu if clicking outside of it
         document.addEventListener('click', function (event) {
-            if (!toggleButton.contains(event.target) && !subMenu.contains(event.target)) {
-                subMenu.classList.add('opacity-0', 'invisible');
-                subMenu.classList.remove('opacity-100', 'visible');
-            }
-        });
+        if (!toggleButton.contains(event.target) && !subMenu.contains(event.target)) {
+            subMenu.classList.add('opacity-0', 'invisible');
+            subMenu.classList.remove('opacity-100', 'visible');
+        }
+    });
 
         // Toggle for "Job Grids"
         // Toggle for "Job Grids"
@@ -1537,14 +1562,14 @@
             jobGridsMenu.classList.toggle('opacity-0');
             jobGridsMenu.classList.toggle('invisible');
             // Close other submenus if open
-            closeOtherSubmenus(jobGridsMenu);
+            closeOtherSubmenus(jobGridsMenu );
         });
 
         // Toggle for "Job Lists"
         const jobListsToggle = document.getElementById('job-lists-toggle');
         const jobListsMenu = document.getElementById('job-lists-menu');
 
-        jobListsToggle.addEventListener('click', function (e) {
+        document.addEventListener('click', function (e) {
             e.preventDefault();
             // Toggle visibility of the Job Lists menu
             jobListsMenu.classList.toggle('opacity-0');
@@ -1556,7 +1581,7 @@
         const jobDetailToggle = document.getElementById('job-detail-toggle');
         const jobDetailMenu = document.getElementById('job-detail-menu');
 
-        jobDetailToggle.addEventListener('click', function (e) {
+        document.addEventListener('click', function (e) {
             e.preventDefault();
             // Toggle visibility of the Job Lists menu
             jobDetailMenu.classList.toggle('opacity-0');
@@ -1683,7 +1708,7 @@
         const jobsGridsToggle = document.getElementById('jobs-grids-toggle');
         const jobsGridsMenu = document.getElementById('jobs-grids-menu');
 
-        jobsGridsToggle.addEventListener('click', function (e) {
+        document.addEventListener('click', function (e) {
             e.preventDefault();
             // Toggle visibility of the Job Grids menu
             jobsGridsMenu.classList.toggle('opacity-0');
@@ -1696,7 +1721,7 @@
         const jobsListsToggle = document.getElementById('jobs-lists-toggle');
         const jobsListsMenu = document.getElementById('jobs-lists-menu');
 
-        jobsListsToggle.addEventListener('click', function (e) {
+        document.addEventListener('click', function (e) {
             e.preventDefault();
             // Toggle visibility of the Job Lists menu
             jobsListsMenu.classList.toggle('opacity-0');
@@ -1708,7 +1733,7 @@
         const jobsDetailToggle = document.getElementById('jobs-detail-toggle');
         const jobsDetailMenu = document.getElementById('jobs-detail-menu');
 
-        jobsDetailToggle.addEventListener('click', function (e) {
+        document.addEventListener('click', function (e) {
             e.preventDefault();
             // Toggle visibility of the Job Lists menu
             jobsDetailMenu.classList.toggle('opacity-0');
